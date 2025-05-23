@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func main()  {
+func cleanInput(text string) []string {
+	lowered := strings.ToLower(text)
+	output := strings.Fields(lowered)
+	return output
+}
+
+func main() {
 	fmt.Println("Hello, World!")
 }
